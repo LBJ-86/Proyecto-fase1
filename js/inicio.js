@@ -14,14 +14,14 @@ function representarCardsProductos() {
         for(var i=0; i<productos.length; i++) {
             cards += '<section>'+
                         '<h3>' + productos[i].nombre + '</h3>' +
-                        '<img src="' + productos[i].foto + '">' +
-                        '<p><b>Precio:</b> $' + productos[i].precio + '</p>' +
-                        '<p><b>Stock:</b> ' + productos[i].stock + '</p>' +
-                        '<p><b>Marca:</b> ' + productos[i].marca + '</p>' +
-                        '<p><b>Categoría:</b> ' + productos[i].categoria + '</p>' +
-                        '<p><b>Detalles:</b> ' + productos[i].detalles + '</p>' +
+                        '<img class= "cards-img" src="' + productos[i].foto + '">' +
+                        '<p><b style="color:yellow;"><u>Descripción</u>:</b> ' + productos[i].descripcionLarga + '</p>' +
+                        '<p><b style="color:yellow;"><u>Marca</u>:</b> ' + productos[i].marca + '</p>' +
+                        '<p><b style="color:yellow;"><u>Precio</u>:</b> $' + productos[i].precio + '</p>' +
+                        '<p><b style="color:yellow;"><u>Stock</u>:</b> ' + productos[i].stock + (productos[i].stock<2? ' unidad':' unidades') + '</p>' +
+                        '<p><b style="color:yellow;"><u>Envío</u>:</b> ' + (productos[i].envio? 'Si':'No') + '</p>' +
                         '<br>' +
-                        '<p><b style="color:gold;">Envío:</b> ' + (productos[i].envio? 'Si':'No') + '</p>' +
+                        '<div><a href="./carrito.html">Comprar!</a></div>'+
                     '</section>'
         }
     }
