@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+body {
+    background-image: url(https://storage.googleapis.com/aqacentor-corporativewebs-pro--corporative-web--wp--pro--static/1/2024/02/habitacion-gaming-768x432.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    margin-bottom: 20px;
+}
+
+.historia {
+    background-color: grey;
+    background: linear-gradient(90deg,
+    #100F0D,
+    rgba(81, 83, 91, 0.5),
+    rgba(167, 173, 193, 0.5),
+    rgba(167, 173, 193, 0.5),
+    rgba(81, 83, 91, 0.5),
+    #100F0D);
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid violet;
+}
+
+main h3 {
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px 5px violet, -1px -1px 5px violet;
+    margin: 10px auto;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+}

@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://media.es.wired.com/photos/6442f341a566376ee967ba24/16:9/w_1920,c_limit/GettyImages-1424828162.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    height: 600px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    margin-bottom: 20px;
+}

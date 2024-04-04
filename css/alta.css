@@ -1,59 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: url(https://media.es.wired.com/photos/6442f341a566376ee967ba24/16:9/w_1920,c_limit/GettyImages-1424828162.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 main {
-    background-color:#ddd;
-    padding: 20px;
+    padding: 0px auto;
     height: auto;
+    margin: 0;
 }
 
 main h1 {
     text-align: center;
+    margin: 0px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    margin-bottom: 20px;
 }
 
 /* ----- Maquetado del formulario de alta ------- */
+
 main .alta-form {
-    background-color: #b63625;
-    width: 80%;
+    background-color: grey;
+    background: linear-gradient(90deg,
+    #100F0D,
+    rgba(81, 83, 91, 0.8),
+    rgba(167, 173, 193, 0.8),
+    rgba(167, 173, 193, 0.8),
+    rgba(81, 83, 91, 0.8),
+    #100F0D);
+    width: 70%;
     margin: 20px auto;
-    padding: 30px;
-    color: white;
-    border-radius: 20px;
-    border: 1px dashed yellow;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 main .input-group {
-    text-align: center;
     padding: 3px;
+    margin: 5px;
+    text-align: center;
 }
 
 main label {
-    color: #badc58;
+    color: black;
     text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.2em;
     display: block;
-    margin-bottom: 5px;
 }
 
-main label[for="envio"] {
-    display: inline-block;
-    margin: 10px 0;
-}
 
-main form button {
-    /* text-align: center; */
-    margin: 15px auto;
-    display: block;
+main label::first-letter {
 
-    width: 40%;
-    height: 35px;
-    background-color: #6ab04c;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #130f40;
+    text-transform: capitalize;
 }
 
 main input {
     width: 70%;
     height: 30px;
     border-radius: 5px;
-    background-color:#95afc0;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 main input[type="checkbox"] {
@@ -61,40 +76,108 @@ main input[type="checkbox"] {
     height: 20px;
 }
 
+main label[for="envio"] {
+    display: inline-block;
+    margin: 10px 0;   
+}
+
+textarea{
+
+    height: 60px;
+    max-height: 100px;
+    width: 70%;
+    max-width: 70%;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+main button {
+   /*  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* text-align: center; */
+    margin: 10px auto;
+    display: block;
+    justify-content: center;
+    width: 30%;
+    height: 35px;
+    background-color: #6ab04c;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+main button[type="reset"] {
+    background-color: red;
+}
+
 /* ----- Maquetado de la tabla de productos ------- */
-main th,td {
-    border: 1px solid black;
-    width: 80px;
-    height: 30px;
-    padding: 10px;
+
+.tabla {
+
+    padding: 20px;
+    border-top: 10px dotted white;
+    width: 100%;
 }
 
 main table {
-    border-collapse: collapse;
-    margin: 5px auto;
+    border-collapse: separate;
+    margin: 10px auto;
 }
 
 main th {
     text-transform: uppercase;
-    background-color: #111;
-    color: white;
-}
-
-main h2 {
+    /* background-color: grey; */
+    background: linear-gradient(0deg,
+    #100F0D,
+    rgba(81, 83, 91, 0.8),
+    rgba(167, 173, 193, 0.8),
+    rgba(167, 173, 193, 0.8),
+    rgba(81, 83, 91, 0.8),
+    #100F0D);
+    color: black;
+    /* text-shadow: 1px 1px white, -1px -1px white; */
+    font-weight: bold;
     text-align: center;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+main td {
+    border: 1px solid black;
+    width: 35px;
+    padding: 5px;
+    background-color: rgba(211, 211, 211, 0.8);
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Pseudoclases formulario de alta */
+
+
+main input:hover {
+
+    background-color: rgb(187, 188, 188);
 }
 
 
+main input:focus {
 
+    background-color: rgb(209, 143, 239);
+}
 
+main textarea:focus {
 
+    background-color: rgb(209, 143, 239);
+}
 
+main button:hover {
+    border: 3px solid black;
+    scale: 1.1;
 
-
-
-
-
-
+}
 
 
 

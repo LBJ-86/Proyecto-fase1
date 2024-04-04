@@ -1,45 +1,146 @@
-main {
-    height: auto;
-    background-color: #689;
-    padding: 25px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://media.es.wired.com/photos/6442f341a566376ee967ba24/16:9/w_1920,c_limit/GettyImages-1424828162.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main .section-cards-container {
     display: flex;
-    /* flex-wrap: nowrap; */
     flex-wrap: wrap;
-
-    justify-content: space-evenly;
-}
-
-main section img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-main section {
-    border: 1px  dashed yellow;
-    width: 350px;
-    padding: 15px;
-    background-color:#943;
-    color: white;
-    margin: 25px;
-    border-radius: 15px;
-}
-
-main section h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    color: rgba(255,255,255,0.7)
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 main .section-cards-header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
     color: white;
-    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
 }
 
-main .section-cards-container p {
-    /* text-align: left; */
+@keyframes animationCard {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+main section {
+    border: 1px solid rgb(78, 2, 64);
+    border-radius: 30px 30px 30px 30px;
+    margin: 20px;
+    width: 300px;
+    min-width: 200px;
+    padding: 5px;
+    background-color: rgba(16, 14, 15, 0.95);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /* ANIMACIONES DE LA CARD */
+    animation-name: animationCard;
+    animation-duration: 500ms;
+    animation-delay: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+}
+
+main section h3 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px red, -1px -1px 3px red;
+    width: 100%;
+    border-radius: 15px;
+}
+
+main section img {
+    height: 250px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 400ms 0s linear
+}
+
+main section p {
+    color: white;
+    font-style: italic;
+}
+
+main section a {
+    color: rgb(255, 248, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    line-height: 40x;
+    text-shadow: 1px 1px 20px rgb(227, 6, 243);
+    border: 1px solid #4F3565;
+    border-radius: 15px;
+    background: linear-gradient(30deg,
+            #100F0D,
+            red,
+            rgb(8, 50, 187),
+            rgb(8, 50, 187),
+            red,
+            #100F0D);
+}
+
+main section div {
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------------------------------- */
+main section a:hover {
+
+    border: 3px solid white;
+    background: yellow;
+    color: black;
+    text-shadow: 1px 1px 20px rgb(194, 236, 214);
+}
+
+.cards-img:hover {
+    height: 350px;
+}
+
+main section:hover {
+    border: 3px solid white;
+}
+
+main section h3:hover {
+    text-decoration: underline;
 }
