@@ -68,7 +68,6 @@ header>div {
 }
 
 .logo {
-    background-color: rgba(16, 15, 13, 0.5);
     width: 10%;
     height: 50px;
     text-align: center;
@@ -82,8 +81,6 @@ header>div {
 }
 
 #barra-busqueda {
-    background-color: rgba(16, 15, 13, 0.5);
-
     width: 50%;
     height: 50px;
     text-align: center;
