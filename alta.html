@@ -12,103 +12,142 @@
 <body>
 
     <header>
+
+        <div>
+            <div class="logo"><img src="css/img/top game.png" alt="logo"></div>
+            <div id="barra-busqueda">
+                <form action="#">
+                    <input type="text" placeholder="Buscar productos, marcas y más...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+
+            <div class="logo"><img src="css/img/top game.png" alt="logo"></div>
+        </div>
+
         <nav>
             <ul>
                 <li> <a href="./index.html">Inicio</a> </li>
                 <li> <a href="./alta.html">Alta</a> </li>
-                <li> <a href="./carrito.html">Carrito</a> </li>
                 <li> <a href="./contacto.html">Contacto</a> </li>
                 <li> <a href="./nosotros.html">Nosotros</a> </li>
-                <li> <a href="./otra.html">Otra</a> </li>
+                <li> <a href="./carrito.html">Carrito</a> </li>
             </ul>
         </nav>
-        <div>
-            <div id="logo">Logo</div>
-            <div id="barra-busqueda">
-                <form action="#">
-                    <label>Buscar</label>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
-                </form>
-            </div>
-            <div id="boton-carrito"><a href="./carrito.html">C</a></div>
-        </div>
+
     </header>
 
     <main>
-        <!-- ------------------------------------------------------------------------------- -->
+
         <h1>Alta de productos</h1>
 
-        <form class="alta-form">
-            <!-- campo de ingreso de nombre de producto -->
-            <div class="input-group">
-                <label for="nombre">nombre</label>
-                <input class="entrada" id="nombre" type="text" name="nombre">
-                <div class="error-details"></div>
-            </div>
 
-            <!-- campo de ingreso de precio de producto -->
-            <div class="input-group">
-                <label for="precio">precio</label>
-                <input class="entrada" id="precio" type="number" step="0.00" name="precio">
-                <div class="error-details"></div>
-            </div>
+        <div class="formulario">
 
-            <!-- campo de ingreso de stock de producto -->
-            <div class="input-group">
-                <label for="stock">stock</label>
-                <input class="entrada" id="stock" type="number" name="stock">
-                <div class="error-details"></div>
-            </div>
+            <form class="alta-form">
 
-            <!-- campo de ingreso de marca de producto -->
-            <div class="input-group">
-                <label for="marca">marca</label>
-                <input class="entrada" id="marca" type="text" name="marca">
-                <div class="error-details"></div>
-            </div>
+                <!-- NOMBRE -->
+                <div class="input-group">
+                    <label for="nombre">nombre</label>
+                    <input class="entrada" id="nombre" type="text" name="nombre" required>
+                    <div class="error-details"></div>
+                </div>
 
-            <!-- campo de ingreso de categoria de producto -->
-            <div class="input-group">
-                <label for="categoria">categoría</label>
-                <input class="entrada" id="categoria" type="text" name="categoria">
-                <div class="error-details"></div>
-            </div>
+                <!-- PRECIO -->
+                <div class="input-group">
+                    <label for="precio">precio</label>
+                    <input class="entrada" id="precio" type="number" step="0.00" name="precio" required>
+                    <div class="error-details"></div>
+                </div>
 
-            <!-- campo de ingreso de detalles de producto -->
-            <div class="input-group">
-                <label for="detalles">detalles</label>
-                <input class="entrada" id="detalles" type="text" name="detalles">
-                <div class="error-details"></div>
-            </div>            
+                  <!-- CÓDIGO-->
+                  <div class="input-group">
+                    <label for="codigo">código</label>
+                    <input class="entrada" id="codigo" type="text" name="codigo">
+                    <div class="error-details"></div>
+                </div>
 
-            <!-- campo de ingreso de la foto del producto -->
-            <div class="input-group">
-                <label for="foto">foto</label>
-                <input class="entrada" id="foto" type="text" name="foto">
-                <div class="error-details"></div>
-            </div>            
+                <!-- STOCK-->
+                <div class="input-group">
+                    <label for="stock">stock</label>
+                    <input class="entrada" id="stock" type="number" name="stock" required>
+                    <div class="error-details"></div>
+                </div>
 
-            <!-- campo de condición envío -->
-            <div class="input-group">
-                <input class="entrada" id="envio" type="checkbox" name="envio">
-                <label for="envio">envío</label>
-            </div>            
+                <!-- MARCA -->
+                <div class="input-group">
+                    <label for="marca">marca</label>
+                    <input class="entrada" id="marca" type="text" name="marca" required>
+                    <div class="error-details"></div>
+                </div>
 
-            <button>Agregar</button>
-        </form>
+                <!-- CATEGORÍA -->
+                <div class="input-group">
+                    <label for="categoria">categoría</label>
+                    <input class="entrada" id="categoria" type="text" name="categoria" required>
+                    <div class="error-details"></div>
+                </div>
 
-        <hr>
+                <!-- DESCRIPCIÓN CORTA -->
+                <div class="input-group">
+                    <label for="descripcionCorta">descripción corta</label>
+                    <input class="entrada" id="descripcionCorta" type="text" name="descripcionCorta" maxlength="40">
+                    <div class="error-details"></div>
+                </div>
 
-        <!-- ------------------------------------------------------------------------------- -->
-        <h2>Lista de productos disponibles</h2>
+                <!-- DESCRIPCIÓN LARGA -->
+                <div class="input-group">
+                    <label for="descripcionLarga">descripción larga</label>
+                    <textarea name="descripción larga" id="descripcionLarga" required></textarea>
+                    <div class="error-details"></div>
+                </div>
 
-        <table></table>
+                <!-- EDAD "desde" -->
+                <div class="input-group">
+                    <label for="edadDesde">edad desde</label>
+                    <input class="entrada" id="edadDesde" type="number" name="edadDesde" min="0">
+                    <div class="error-details"></div>
+                </div>
+
+                <!-- EDAD "hasta" -->
+                <div class="input-group">
+                    <label for="edadHasta">edad hasta</label>
+                    <input class="entrada" id="edadHasta" type="number" name="edadHasta">
+                    <div class="error-details"></div>
+                </div>
+
+                <!-- FOTO -->
+                <div class="input-group">
+                    <label for="foto">foto</label>
+                    <input class="entrada" id="foto" type="" name="foto">
+                    <div class="error-details"></div>
+                </div>
+
+                <!-- ENVÍO -->
+                <div class="input-group">
+                    <input class="entrada" id="envio" type="checkbox" name="envio">
+                    <label for="envio">envío sin cargo</label>
+                </div>
+
+                <button>Agregar producto</button> <button type="reset">Limpiar formulario</button>
+
+            </form>
+
+        </div>
+
+
+
+        <div class="tabla"><table></table></div>
+        
+
+
+
+
 
     </main>
 
     <footer>
-        <h3>&copy; Copyright 2024</h3>
+        <h3>&copy; TOP GAME</h3>
     </footer>
 
     <script src="js/productos.js"></script>
